@@ -1,29 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-    <meta charset="utf-8">
-    <title>kori_mizu プロフィール</title>
-    <style>body{background-color:#CCFFFF;}</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>kori_mizuのプロフィール</title>
+
+<style>
+:root{
+    --bg:#f8fafc;
+    --card:#ffffff;
+    --accent:#2563eb;
+    --text:#1e293b;
+    --sub:#64748b;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:
+        "Segoe UI",
+        "Hiragino Sans",
+        "Yu Gothic",
+        sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.8;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+header{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    color:var(--sub);
+}
+
+.card{
+    background:var(--card);
+    border-radius:20px;
+    padding:30px;
+    margin-bottom:25px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.06);
+}
+
+.card h2{
+    color:var(--accent);
+    margin-bottom:20px;
+    border-bottom:2px solid #e2e8f0;
+    padding-bottom:8px;
+}
+
+.timeline{
+    position:relative;
+    padding-left:25px;
+}
+
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:7px;
+    top:0;
+    bottom:0;
+    width:2px;
+    background:#cbd5e1;
+}
+
+.item{
+    position:relative;
+    margin-bottom:18px;
+}
+
+.item::before{
+    content:"";
+    position:absolute;
+    left:-23px;
+    top:10px;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:var(--accent);
+}
+
+.year{
+    font-weight:bold;
+    color:var(--accent);
+}
+
+footer{
+    text-align:center;
+    color:var(--sub);
+    margin-top:30px;
+}
+</style>
 </head>
+
 <body>
-    <center>
-        <h2>kori_mizu プロフィール</h2>
-    </center>
-    <p>
-        <big>学歴</big><br>
-        渋谷教育学園幕張中学校 (2020-2023)<br>
-        渋谷教育学園幕張高等学校 (2023-2026)<br>
-        東京理科大学 創域理工学部 先端物理学科 (2026-)
-    </p>
-    <p>
-        <big>課外活動</big><br>
-        2022年7月 千葉市中学校総合体育大会水泳の部 入賞 (200Fr)<br>
-        2022年8月 第27回全国中学高校ディベート選手権 出場 (担当パート：肯定側立論、否定側立論)<br>
-        2023年8月 第28回全国中学高校ディベート選手権 ベスト4 (担当パート：否定側立論)<br>
-        2024年8月 第29回全国中学高校ディベート選手権 ベスト16 (担当パート：肯定側立論、否定側立論)<br>
-        2024年9月 第4回上智大学弁論部杯全国ディベート大会 優勝 (主な担当パート：第二立論)<br>
-        2024年12月 日本言語学オリンピック 銀賞<br>
-        2025年8月 物理チャレンジ2025 本戦出場
-    </p>
+
+<div class="container">
+
+<header>
+    <h1>kori_mizu</h1>
+    <p>Physics / Japanese Debate</p>
+</header>
+
+<div class="card">
+    <h2>学歴</h2>
+
+    <div class="timeline">
+
+        <div class="item">
+            <div class="year">2020–2023</div>
+            渋谷教育学園幕張中学校
+        </div>
+
+        <div class="item">
+            <div class="year">2023–2026</div>
+            渋谷教育学園幕張高等学校
+        </div>
+
+        <div class="item">
+            <div class="year">2026–</div>
+            東京理科大学 創域理工学部 先端物理学科
+        </div>
+
+    </div>
+</div>
+
+<div class="card">
+    <h2>課外活動・実績</h2>
+
+    <div class="timeline">
+
+        <div class="item">
+            <span class="year">2022.07</span><br>
+            千葉市中学校総合体育大会水泳の部 入賞（200m自由形）
+        </div>
+
+        <div class="item">
+            <span class="year">2022.08</span><br>
+            第27回全国中学高校ディベート選手権 出場（担当パート：両立論）
+        </div>
+
+        <div class="item">
+            <span class="year">2023.08</span><br>
+            第28回全国中学高校ディベート選手権 ベスト4（担当パート：否定側立論）
+        </div>
+
+        <div class="item">
+            <span class="year">2024.08</span><br>
+            第29回全国中学高校ディベート選手権 ベスト16（担当パート：両立論）
+        </div>
+
+        <div class="item">
+            <span class="year">2024.09</span><br>
+            第4回上智大学弁論部杯全国ディベート大会 優勝（主な担当パート：第二立論）
+        </div>
+
+        <div class="item">
+            <span class="year">2024.12</span><br>
+            日本言語学オリンピック 銀賞
+        </div>
+
+        <div class="item">
+            <span class="year">2025.08</span><br>
+            物理チャレンジ2025 本戦出場
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    © 2026 kori_mizu
+</footer>
+
+</div>
+
 </body>
 </html>
